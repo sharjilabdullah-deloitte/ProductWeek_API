@@ -1,6 +1,4 @@
 package GetCalls;
-
-import api.HashedinProjects;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -24,7 +22,7 @@ public class getCalls_Keshav {
     String baseUrl = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
     String tokenByAdmin;
     int responseTime;
-    public static Logger logger = Logger.getLogger(HashedinProjects.class);
+    public static Logger logger = Logger.getLogger(getCalls_Keshav.class);
     @BeforeTest
     public void handshake() {
         RestAssured.useRelaxedHTTPSValidation();
@@ -46,7 +44,7 @@ public class getCalls_Keshav {
     @Test(priority = 1)
     public void testingAdminLoginApi() throws IOException {
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/jsonbody/adminLogin.json");
+                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
         String postAdminJsonData = Files.readString(fileNameForAdminLogin);
 
         String response =
