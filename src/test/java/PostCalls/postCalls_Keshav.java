@@ -1,6 +1,6 @@
 package PostCalls;
 
-import api.HashedinProjects;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -23,7 +23,7 @@ public class postCalls_Keshav {
     String baseUrl = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
     int responseTime;
     String tokenByAdmin;
-    public static Logger logger = Logger.getLogger(HashedinProjects.class);
+    public static Logger logger = Logger.getLogger(postCalls_Keshav.class);
     @BeforeTest
     public void handshake() {
         RestAssured.useRelaxedHTTPSValidation();
@@ -45,7 +45,7 @@ public class postCalls_Keshav {
         @Test(priority = 1)
     public void testingAdminLoginApi() throws IOException {
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/jsonbody/adminLogin.json");
+                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
         String postAdminJsonData = Files.readString(fileNameForAdminLogin);
 
         String response =
@@ -74,7 +74,7 @@ public class postCalls_Keshav {
     @Test(priority = 2)
     public void createVacancy() throws IOException {
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/jsonbody/createVacancy.json");
+                = Path.of("src/main/java/utils/jsonBody/createVacancy.json");
         String postVacancyJsonData = Files.readString(fileNameForAdminLogin);
         Response response =
                 given()
@@ -103,7 +103,7 @@ public class postCalls_Keshav {
     @Test(priority = 3)
     public void createNewBand() throws IOException {
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/jsonbody/createNewBand.json");
+                = Path.of("src/main/java/utils/jsonBody/createNewBand.json");
         String newBandJsonData = Files.readString(fileNameForAdminLogin);
         Response response =
                 given()
@@ -126,7 +126,7 @@ public class postCalls_Keshav {
     @Test(priority = 4)
     public void signup() throws IOException {
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/jsonbody/signup.json");
+                = Path.of("src/main/java/utils/jsonBody/signup.json");
         String signupJsonData = Files.readString(fileNameForAdminLogin);
         Response response =
                 given()
