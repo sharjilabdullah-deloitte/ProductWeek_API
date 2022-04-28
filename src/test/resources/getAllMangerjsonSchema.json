@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "skill": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "designation": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "band": {
+          "type": "string"
+        },
+        "userproject": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "projectId": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "string"
+                },
+                "timeDuration": {
+                  "type": "string"
+                },
+                "technologyProject": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "updatedAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "projectId",
+                "name",
+                "status",
+                "description",
+                "startDate",
+                "endDate",
+                "timeDuration",
+                "technologyProject",
+                "updatedAt"
+              ]
+            }
+          ]
+        },
+        "userVacancy": {
+          "type": "array",
+          "items": {}
+        },
+        "roles": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "email",
+        "phoneNumber",
+        "skill",
+        "username",
+        "designation",
+        "address",
+        "band",
+        "userproject",
+        "userVacancy",
+        "roles"
+      ]
+    }
+  ]
+}
