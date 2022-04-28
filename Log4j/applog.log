@@ -1,0 +1,45 @@
+INFO    2022-04-28 10:23:38,229 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 10:23:38,249 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 10:23:38,265 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-28 11:06:31,912 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:06:31,923 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:06:31,937 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-28 11:07:15,409 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:07:15,411 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:07:15,422 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-28 11:07:15,423 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-28 11:07:15,425 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-28 11:07:15,425 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-28 11:10:01,894 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:10:01,898 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:10:01,898 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-28 11:10:01,898 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-28 11:10:01,898 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-28 11:10:01,898 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-28 11:10:52,418 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:10:52,418 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:10:52,418 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-28 11:10:52,418 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-28 11:10:52,418 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-28 11:10:52,418 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-28 11:13:19,388 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:13:19,404 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:13:56,619 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:13:56,619 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:13:56,619 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-28 11:13:56,619 [main] GetCalls.GetProject  - Asserting whether email field is not null
+INFO    2022-04-28 11:13:56,619 [main] GetCalls.GetProject  - Asserting whether name field is not null
+INFO    2022-04-28 11:20:12,603 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:20:12,603 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:20:12,603 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-28 11:20:12,603 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-28 11:20:12,603 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-28 11:20:12,603 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-28 11:22:50,788 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-28 11:22:50,788 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 11:22:50,788 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-28 11:22:50,788 [main] GetCalls.GetProject  - Asserting whether email field is not null
+INFO    2022-04-28 11:22:50,788 [main] GetCalls.GetProject  - Asserting whether name field is not null
+INFO    2022-04-28 11:29:11,939 [main] GetCalls.GetProject  - Uploading profile picture
+INFO    2022-04-28 11:29:21,484 [main] GetCalls.GetProject  - Signing as admin
+INFO    2022-04-28 11:29:25,255 [main] GetCalls.GetProject  - Uploading profile picture

@@ -23,16 +23,17 @@ public class GetManagerWithProjectId {
     static String token;
     static String postAdminJsonData;
     static Response postAdminLoginResponse;
+    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
 
     public static Logger logger = Logger.getLogger(GetProject.class);
 
     @Test(priority = 1)
     public static void setupAdminLogin() throws IOException {
-        RestAssured.baseURI = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
         Path fileNameForAdminLogin
                 = Path.of("src/main/java/resources/jsonData/AdminLogin.json");
         postAdminJsonData = Files.readString(fileNameForAdminLogin);
         postAdminLoginResponse = given().headers("Content-Type",ContentType.JSON).
+                baseUri(url).
                 body(postAdminJsonData).
                 when().
                 post("api/auth/signin").
@@ -47,6 +48,7 @@ public class GetManagerWithProjectId {
     public void validateSC() {
         response = given().headers("Authorization", "Bearer " + token, "Content-Type",
                         ContentType.JSON)
+                .baseUri(url)
                 .when().get("projects-managers/149").then().extract().response();
         int statusCode = response.statusCode();
         String contentType = response.getContentType();
@@ -65,7 +67,7 @@ public class GetManagerWithProjectId {
         JSONArray jsonArray = new JSONArray(responseBody);
         JSONObject jsonObject = jsonArray.getJSONObject(0);
         String email = jsonObject.getString("email");
-        System.out.println("The email of the user associated is "+ email);
+        System.out.println("The email of the manager associated is "+ email);
         logger.info("Asserting whether email field is not null");
         assertThat(email,is(notNullValue()));
     }

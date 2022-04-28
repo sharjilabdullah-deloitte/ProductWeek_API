@@ -25,16 +25,19 @@ public class PostProfilePicUpdate  {
     static String token;
     static String postAdminJsonData;
     static Response postAdminLoginResponse;
+    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
 
     public static Logger logger = Logger.getLogger(GetProject.class);
 
     @Test(priority = 1)
     public static void setupAdminLogin() throws IOException {
-        RestAssured.baseURI = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
+
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/resources/jsonData/AdminLogin.json");
+                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
         postAdminJsonData = Files.readString(fileNameForAdminLogin);
+        logger.info("Signing as admin");
         postAdminLoginResponse = given().headers("Content-Type", ContentType.JSON).
+                baseUri(url).
                 body(postAdminJsonData).
                 when().
                 post("api/auth/signin").
@@ -48,11 +51,14 @@ public class PostProfilePicUpdate  {
     @Test(priority = 2)
     public void postProfilePic(){
 
-        File uploadProfilePic = new File("src/main/java/resources/pictures/updateProfilePic.PNG");
-        response = given().headers("Authorization", "Bearer " + token)
+        File uploadProfilePic = new File("src/main/java/utils/pictures/updateProfilePic.PNG");
+        response = given()
+                .baseUri(url)
+                .headers("Authorization", "Bearer " + token)
                 .multiPart("profile", uploadProfilePic)                         //key = profile
                 .when().
                 post("users/437/profile-picture").then().extract().response();
+        logger.info("Uploading profile picture");
         System.out.println("The Status code is :" + response.statusCode());
         Assert.assertEquals(response.statusCode(),200);
     }

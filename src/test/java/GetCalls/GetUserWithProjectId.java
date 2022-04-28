@@ -24,16 +24,20 @@ public class GetUserWithProjectId {
     static String token;
     static String postAdminJsonData;
     static Response postAdminLoginResponse;
+    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
 
     public static Logger logger = Logger.getLogger(GetProject.class);
 
     @Test(priority = 1)
     public static void setupAdminLogin() throws IOException {
-        RestAssured.baseURI = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
+
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/resources/jsonData/AdminLogin.json");
+                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
         postAdminJsonData = Files.readString(fileNameForAdminLogin);
-        postAdminLoginResponse = given().headers("Content-Type",ContentType.JSON).
+        logger.info("First signing with admin");
+        postAdminLoginResponse = given().
+                baseUri(url).
+                headers("Content-Type",ContentType.JSON).
                 body(postAdminJsonData).
                 when().
                 post("api/auth/signin").
@@ -47,7 +51,8 @@ public class GetUserWithProjectId {
     @Test(priority = 2)
     public void validateSC() {
         response = given().headers("Authorization", "Bearer " + token, "Content-Type",
-                        ContentType.JSON)
+                        ContentType.JSON).
+                baseUri(url)
                 .when().get("projects-users/149").then().extract().response();
         int statusCode = response.statusCode();
         String contentType = response.getContentType();

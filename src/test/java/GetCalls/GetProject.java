@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -23,19 +24,20 @@ public class GetProject {
     String responseBody;
     static String token;
     JSONObject jsonObject;
-    JSONArray data;
     static String postAdminJsonData;
     static Response postAdminLoginResponse;
 
     public static Logger logger = Logger.getLogger(GetProject.class);
+    static String baseUrl = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
 
     @Test(priority = 1)
     public static void setupAdminLogin() throws IOException {
-        RestAssured.baseURI = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
+
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/resources/jsonData/AdminLogin.json");
+                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
         postAdminJsonData = Files.readString(fileNameForAdminLogin);
-        postAdminLoginResponse = given().headers("Content-Type",ContentType.JSON).
+        postAdminLoginResponse = given().baseUri(baseUrl).
+                headers("Content-Type",ContentType.JSON).
                 body(postAdminJsonData).
                 when().
                 post("api/auth/signin").
@@ -45,21 +47,25 @@ public class GetProject {
         token = jsonObject.get("accessToken").toString();
         System.out.println("Token is " + token);
     }
+
     @Test(priority = 2)
     public void validateSC() {
-        response = given().headers("Authorization", "Bearer " + token, "Content-Type",
+
+        response = given().baseUri(baseUrl).
+                headers("Authorization", "Bearer " + token, "Content-Type",
                         ContentType.JSON)
                 .when().get("projects/3").then().extract().response();
         int statusCode = response.statusCode();
         String contentType = response.getContentType();
 
         logger.info("The Response is : ");
-        responseBody = response.getBody().asString();
+        responseBody = response.asString();
         System.out.println("Response is " + responseBody);
         logger.info("The Status code is 200 : VERIFIED ");
         Assert.assertEquals(statusCode,200);
         logger.info("The Content Type is : JSON ");
         Assert.assertEquals(contentType,"application/json");
+
     }
 
     @Test(priority = 3)

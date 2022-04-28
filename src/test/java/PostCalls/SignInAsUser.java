@@ -16,11 +16,11 @@ import java.nio.file.Path;
 import static io.restassured.RestAssured.given;
 
 public class SignInAsUser {
-    Response response;
-    String responseBody;
-    static String token;
+
     static String postUserJsonData;
     static Response postUserLoginResponse;
+    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
+
 
     public static Logger logger = Logger.getLogger(GetProject.class);
 
@@ -28,9 +28,10 @@ public class SignInAsUser {
     public static void setupUserLogin() throws IOException {
         RestAssured.baseURI = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
         Path fileNameForUserLogin
-                = Path.of("src/main/java/resources/jsonData/UserLogin.json");
+                = Path.of("src/main/java/utils/jsonBody/UserLogin.json");
         postUserJsonData = Files.readString(fileNameForUserLogin);
         postUserLoginResponse = given().headers("Content-Type", ContentType.JSON).
+                baseUri(url).
                 body(postUserJsonData).
                 when().
                 post("api/auth/signin").
