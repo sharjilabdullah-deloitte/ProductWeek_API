@@ -1,25 +1,20 @@
-package PostCalls;
+package DeleteCalls;
 
 import GetCalls.GetProject;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;
-import org.hamcrest.core.IsEqual;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.MatcherAssert.assertThat;
 
-public class PostProfilePicUpdate  {
-
+public class DeleteUser {
     Response response;
     static String token;
     static String postAdminJsonData;
@@ -48,17 +43,14 @@ public class PostProfilePicUpdate  {
     }
 
     @Test(priority = 2)
-    public void postProfilePic(){
-
-        File uploadProfilePic = new File("src/main/java/utils/pictures/updateProfilePic.PNG");
+    public void deleteUser() {
         response = given()
                 .baseUri(url)
-                .headers("Authorization", "Bearer " + token)
-                .multiPart("profile", uploadProfilePic)                         //key = profile
-                .when().                                                           //437
-                post("users/69/profile-picture").then().extract().response();
-        logger.info("Uploading profile picture");
-        System.out.println("The Status code is :" + response.statusCode());
-        Assert.assertEquals(response.statusCode(),200);
+                .headers("Authorization", "Bearer " + token, "Content-Type",
+                        ContentType.JSON)
+                .when()
+                .delete("users/456")
+                .then()
+                .assertThat().statusCode(204).extract().response();
     }
 }
