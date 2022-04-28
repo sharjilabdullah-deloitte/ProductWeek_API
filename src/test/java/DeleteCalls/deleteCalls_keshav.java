@@ -1,6 +1,5 @@
 package DeleteCalls;
 
-import api.HashedinProjects;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -24,7 +23,7 @@ public class deleteCalls_keshav {
     String tokenByAdmin;
     int responseTime;
     String tokenByManager;
-    public static Logger logger = Logger.getLogger(HashedinProjects.class);
+    public static Logger logger = Logger.getLogger(deleteCalls_keshav.class);
     @BeforeTest
     public void handshake() {
         RestAssured.useRelaxedHTTPSValidation();
@@ -46,7 +45,7 @@ public class deleteCalls_keshav {
         @Test(priority = 1)
     public void testingAdminLoginApi() throws IOException {
         Path fileNameForAdminLogin
-                = Path.of("src/main/java/jsonbody/adminLogin.json");
+                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
         String postAdminJsonData = Files.readString(fileNameForAdminLogin);
 
         String response =
