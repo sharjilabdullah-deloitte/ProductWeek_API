@@ -11,20 +11,20 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static io.restassured.RestAssured.given;
 
-public class PostSpecialization_Abinesh extends BaseClass {
+public class PostTechnologyAbinesh extends BaseClass {
     public static Logger logger = Logger.getLogger(PostProfilePicUpdate.class);
-    @Test(priority = 5)
-    public void postSpecialization(){
+    @Test(priority = 6)
+    public void postTechnology(){
         JSONObject object = new JSONObject();
-        String specName= "Php" + ThreadLocalRandom.current().nextInt();
-        object.put("specialization",specName);
+        String technologyName = "Java" + ThreadLocalRandom.current().nextInt();
+        object.put("technology",technologyName);
         Response response = given().
                 baseUri(url).
                 header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token).
                 body(object.toString()).
                 when().
-                post("drop-down/specialization").
+                post("drop-down/technology").
                 then().statusCode(201).extract().response();
         int statuscode = response.getStatusCode();
         Assert.assertEquals(statuscode, 201, "Correct status code returned");
@@ -36,10 +36,8 @@ public class PostSpecialization_Abinesh extends BaseClass {
         else logger.info("Response time is greater than 1000");
         String checkEmpty=response.asString();
         Assert.assertEquals(false,checkEmpty.isEmpty());
-
-        if((object.get("specialization") instanceof String)){
+        if((object.get("technology") instanceof String)){
             logger.info("Data types Validated");
         }
     }
-
 }

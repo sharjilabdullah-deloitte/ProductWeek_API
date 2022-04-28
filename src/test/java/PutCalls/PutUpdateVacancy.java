@@ -13,7 +13,7 @@ import java.nio.file.Path;
 
 import static io.restassured.RestAssured.given;
 
-public class PutTest extends BaseClass {
+public class PutUpdateVacancy extends BaseClass {
 
     @BeforeSuite
     public void nothing() {

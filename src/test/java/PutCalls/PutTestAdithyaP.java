@@ -14,10 +14,10 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class PutTests_adithyaP extends BaseClass {
+public class PutTestAdithyaP extends BaseClass {
 
 
-    public static Logger logger = Logger.getLogger(PutTests_adithyaP.class);
+    public static Logger logger = Logger.getLogger(PutTestAdithyaP.class);
 
     @Test(priority = 1)
     public void updateProject() throws IOException {

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetSpecialization_Abinesh extends BaseClass {
+public class GetSpecializationAbinesh extends BaseClass {
     public static Logger logger = Logger.getLogger(PostProfilePicUpdate.class);
     String specializationName = "php15";
     @Test(priority = 3)

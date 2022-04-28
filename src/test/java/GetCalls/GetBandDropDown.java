@@ -13,8 +13,8 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class Bandrpdwn extends BaseClass {
-    public static Logger logger = Logger.getLogger(Bandrpdwn.class);
+public class GetBandDropDown extends BaseClass {
+    public static Logger logger = Logger.getLogger(GetBandDropDown.class);
     @BeforeTest
     void init() {
         RestAssured.useRelaxedHTTPSValidation();

@@ -4,6 +4,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -21,7 +23,7 @@ public class BaseClass {
 
     public static Logger logger = Logger.getLogger(BaseClass.class);
 
-    @Test
+    @BeforeClass
     public static void setupAdminLogin() throws IOException {
 
         Path fileNameForAdminLogin

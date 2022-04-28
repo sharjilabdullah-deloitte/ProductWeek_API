@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetProfilePicture_Abinesh extends BaseClass {
+public class GetProfilePictureAbinesh extends BaseClass {
     @Test(priority = 4)
     public void getprofilePicture() {
         Response response = given().

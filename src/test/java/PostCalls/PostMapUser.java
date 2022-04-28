@@ -13,8 +13,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.lessThan;
 
-public class MapUsr extends BaseClass {
-    public static Logger logger = Logger.getLogger(MapUsr.class);
+public class PostMapUser extends BaseClass {
+    public static Logger logger = Logger.getLogger(PostMapUser.class);
     Response response;
 
     @BeforeTest

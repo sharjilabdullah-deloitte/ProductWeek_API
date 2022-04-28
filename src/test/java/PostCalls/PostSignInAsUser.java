@@ -1,6 +1,5 @@
 package PostCalls;
 
-import GetCalls.GetProject;
 import baseClass.BaseClass;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -16,13 +15,13 @@ import java.nio.file.Path;
 
 import static io.restassured.RestAssured.given;
 
-public class SignInAsUser extends BaseClass {
+public class PostSignInAsUser extends BaseClass {
 
     static String postUserJsonData;
     static Response postUserLoginResponse;
 
 
-    public static Logger logger = Logger.getLogger(SignInAsUser.class);
+    public static Logger logger = Logger.getLogger(PostSignInAsUser.class);
 
     @Test(priority = 1)
     public static void setupUserLogin() throws IOException {

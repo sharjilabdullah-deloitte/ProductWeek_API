@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetTechnology_Abinesh extends BaseClass {
+public class GetTechnologyAbinesh extends BaseClass {
     public static Logger logger = Logger.getLogger(PostProfilePicUpdate.class);
     String techName = "React JS";
     @Test(priority = 1)

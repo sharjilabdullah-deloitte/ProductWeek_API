@@ -1,4 +1,7 @@
 .idea
 target/
+test-output/
+testng.xml
+Log4j/
 
 	

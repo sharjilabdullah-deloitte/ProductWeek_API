@@ -15,10 +15,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.lessThan;
 
-public class PostTests_adithyaP extends BaseClass {
+public class PostTestsAdithyaP extends BaseClass {
 
 
-    public static Logger logger = Logger.getLogger(PostTests_adithyaP.class);
+    public static Logger logger = Logger.getLogger(PostTestsAdithyaP.class);
 
     @Test
     public void managerCreatesId(){

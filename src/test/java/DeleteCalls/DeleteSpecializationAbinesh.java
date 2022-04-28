@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class DeleteSpecialization_Abinesh extends BaseClass {
+public class DeleteSpecializationAbinesh extends BaseClass {
     @Test(priority = 1)
     public void deleteSpecialization() {
         JSONObject object = new JSONObject();

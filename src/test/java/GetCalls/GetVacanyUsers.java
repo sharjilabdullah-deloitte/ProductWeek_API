@@ -12,8 +12,8 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class VacanyUsers extends BaseClass {
-    public static Logger logger = Logger.getLogger(VacanyUsers.class);
+public class GetVacanyUsers extends BaseClass {
+    public static Logger logger = Logger.getLogger(GetVacanyUsers.class);
     @BeforeTest
     void init() {
         RestAssured.useRelaxedHTTPSValidation();
