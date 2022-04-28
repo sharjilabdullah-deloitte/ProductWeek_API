@@ -1,0 +1,23 @@
+{
+
+  "name": "High-course-12Edited",
+
+  "status": "open",
+
+  "description": "An application for artist to showcase & sell their artwork as customised products on commission basis. The artist need not worry about the production, shipping, etc.\n To build a portal for art-sellers to build a profile & sell their artwork as customised products. The buyer can login & can buy artwork with any customisation of their choice.",
+
+  "startDate": "2022-04-11",
+
+  "endDate": "2022-04-11",
+
+  "technologyProject": [
+
+    "ruby",
+
+    "java"
+
+  ],
+
+  "updatedAt": "2022-04-27T18:29:10.000+00:00"
+
+}
