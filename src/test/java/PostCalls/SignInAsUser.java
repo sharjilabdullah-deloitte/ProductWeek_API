@@ -1,6 +1,7 @@
 package PostCalls;
 
 import GetCalls.GetProject;
+import baseClass.BaseClass;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -15,14 +16,13 @@ import java.nio.file.Path;
 
 import static io.restassured.RestAssured.given;
 
-public class SignInAsUser {
+public class SignInAsUser extends BaseClass {
 
     static String postUserJsonData;
     static Response postUserLoginResponse;
-    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
 
 
-    public static Logger logger = Logger.getLogger(GetProject.class);
+    public static Logger logger = Logger.getLogger(SignInAsUser.class);
 
     @Test(priority = 1)
     public static void setupUserLogin() throws IOException {

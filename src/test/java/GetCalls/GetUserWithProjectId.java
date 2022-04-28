@@ -1,5 +1,6 @@
 package GetCalls;
 
+import baseClass.BaseClass;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -17,38 +18,14 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class GetUserWithProjectId {
+public class GetUserWithProjectId extends BaseClass {
 
     Response response;
     String responseBody;
-    static String token;
-    static String postAdminJsonData;
-    static Response postAdminLoginResponse;
-    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
 
-    public static Logger logger = Logger.getLogger(GetProject.class);
+    public static Logger logger = Logger.getLogger(GetUserWithProjectId.class);
 
     @Test(priority = 1)
-    public static void setupAdminLogin() throws IOException {
-
-        Path fileNameForAdminLogin
-                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
-        postAdminJsonData = Files.readString(fileNameForAdminLogin);
-        logger.info("First signing with admin");
-        postAdminLoginResponse = given().
-                baseUri(url).
-                headers("Content-Type",ContentType.JSON).
-                body(postAdminJsonData).
-                when().
-                post("api/auth/signin").
-                then().extract().response();
-        String adminResponse = postAdminLoginResponse.prettyPrint();
-        JSONObject jsonObject = new JSONObject(adminResponse);
-        token = jsonObject.get("accessToken").toString();
-        System.out.println("Token is " + token);
-    }
-
-    @Test(priority = 2)
     public void validateSC() {
         response = given().headers("Authorization", "Bearer " + token, "Content-Type",
                         ContentType.JSON).

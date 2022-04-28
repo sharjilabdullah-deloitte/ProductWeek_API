@@ -1,6 +1,7 @@
 package PostCalls;
 
 import GetCalls.GetProject;
+import baseClass.BaseClass;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -18,36 +19,12 @@ import java.nio.file.Path;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class PostProfilePicUpdate  {
+public class PostProfilePicUpdate extends BaseClass {
 
     Response response;
-    static String token;
-    static String postAdminJsonData;
-    static Response postAdminLoginResponse;
-    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
-
-    public static Logger logger = Logger.getLogger(GetProject.class);
+    public static Logger logger = Logger.getLogger(PostProfilePicUpdate.class);
 
     @Test(priority = 1)
-    public static void setupAdminLogin() throws IOException {
-
-        Path fileNameForAdminLogin
-                = Path.of("src/main/java/utils/jsonBody/AdminLogin.json");
-        postAdminJsonData = Files.readString(fileNameForAdminLogin);
-        logger.info("Signing as admin");
-        postAdminLoginResponse = given().headers("Content-Type", ContentType.JSON).
-                baseUri(url).
-                body(postAdminJsonData).
-                when().
-                post("api/auth/signin").
-                then().extract().response();
-        String adminResponse = postAdminLoginResponse.prettyPrint();
-        JSONObject jsonObject = new JSONObject(adminResponse);
-        token = jsonObject.get("accessToken").toString();
-        System.out.println("Token is " + token);
-    }
-
-    @Test(priority = 2)
     public void postProfilePic(){
 
         File uploadProfilePic = new File("src/main/java/utils/pictures/updateProfilePic.PNG");

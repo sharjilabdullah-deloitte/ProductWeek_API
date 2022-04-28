@@ -52,3 +52,9 @@ INFO    2022-04-28 12:10:32,883 [main] GetCalls.GetProject  - Signing as admin
 INFO    2022-04-28 13:06:48,108 [main] GetCalls.GetProject  - Signing as admin
 INFO    2022-04-28 13:08:16,975 [main] GetCalls.GetProject  - Signing as admin
 INFO    2022-04-28 13:10:06,356 [main] GetCalls.GetProject  - Signing as admin
+INFO    2022-04-28 16:36:09,484 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-28 16:36:12,286 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-28 16:36:12,287 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-28 16:36:12,291 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-28 16:36:12,292 [main] baseClass.BaseClass  - Asserting whether email field is not null
+INFO    2022-04-28 16:36:12,296 [main] baseClass.BaseClass  - Asserting whether id field is not null

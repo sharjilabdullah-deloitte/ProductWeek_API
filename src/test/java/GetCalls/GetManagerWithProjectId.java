@@ -1,5 +1,6 @@
 package GetCalls;
 
+import baseClass.BaseClass;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -17,34 +18,11 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class GetManagerWithProjectId {
+public class GetManagerWithProjectId extends BaseClass {
     Response response;
     String responseBody;
-    static String token;
-    static String postAdminJsonData;
-    static Response postAdminLoginResponse;
-    static String url = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
-
-    public static Logger logger = Logger.getLogger(GetProject.class);
 
     @Test(priority = 1)
-    public static void setupAdminLogin() throws IOException {
-        Path fileNameForAdminLogin
-                = Path.of("src/main/java/resources/jsonData/AdminLogin.json");
-        postAdminJsonData = Files.readString(fileNameForAdminLogin);
-        postAdminLoginResponse = given().headers("Content-Type",ContentType.JSON).
-                baseUri(url).
-                body(postAdminJsonData).
-                when().
-                post("api/auth/signin").
-                then().extract().response();
-        String adminResponse = postAdminLoginResponse.prettyPrint();
-        JSONObject jsonObject = new JSONObject(adminResponse);
-        token = jsonObject.get("accessToken").toString();
-        System.out.println("Token is " + token);
-    }
-
-    @Test(priority = 2)
     public void validateSC() {
         response = given().headers("Authorization", "Bearer " + token, "Content-Type",
                         ContentType.JSON)
@@ -62,7 +40,7 @@ public class GetManagerWithProjectId {
         Assert.assertEquals(contentType,"application/json");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void validateEmail(){
         JSONArray jsonArray = new JSONArray(responseBody);
         JSONObject jsonObject = jsonArray.getJSONObject(0);
@@ -71,7 +49,7 @@ public class GetManagerWithProjectId {
         logger.info("Asserting whether email field is not null");
         assertThat(email,is(notNullValue()));
     }
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void validateId(){
         JSONArray jsonArray = new JSONArray(responseBody);
         JSONObject jsonObject = jsonArray.getJSONObject(0);
