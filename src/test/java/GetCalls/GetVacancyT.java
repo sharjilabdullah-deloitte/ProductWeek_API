@@ -12,9 +12,9 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class GetTestAdithyaP extends BaseClass {
+public class GetVacancyT extends BaseClass {
 
-    public static Logger logger = Logger.getLogger(GetTestAdithyaP.class);
+    public static Logger logger = Logger.getLogger(GetVacancyT.class);
 
 
     @Test(priority = 1)
@@ -34,7 +34,6 @@ public class GetTestAdithyaP extends BaseClass {
                         get("vacancies").
                 then().
 
-                       // log().body().
                         extract().response();
         try {
             int statusCode = response.getStatusCode();

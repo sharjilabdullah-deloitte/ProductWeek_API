@@ -33,6 +33,7 @@ public class GetAllVacancy extends BaseClass {
         int vacnacyId = jsonObject.getInt("vacancyId");
         logger.info("Got vacancy Associated with the project ID");
         Assert.assertEquals(vacnacyId,39);
+
     }
     @Test(priority = 3)
     public void getAllUser(){

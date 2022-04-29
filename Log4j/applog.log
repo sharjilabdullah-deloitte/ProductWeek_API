@@ -199,8 +199,8 @@ INFO    2022-04-28 21:23:58,958 [main] baseClass.BaseClass  - Got vacancy Associ
 INFO    2022-04-28 21:24:00,277 [main] baseClass.BaseClass  - Got the user Associated with the project ID
 INFO    2022-04-28 21:24:00,811 [main] baseClass.BaseClass  - Got a user Assoiated with user id
 INFO    2022-04-28 21:24:00,813 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:24:02,623 [main] GetCalls.GetTestAdithyaP  - Data Types validated
-INFO    2022-04-28 21:24:03,137 [main] GetCalls.GetTestAdithyaP  - checking whether user 8 has applied for project 23
+INFO    2022-04-28 21:24:02,623 [main] GetCalls.GetVacancyT  - Data Types validated
+INFO    2022-04-28 21:24:03,137 [main] GetCalls.GetVacancyT  - checking whether user 8 has applied for project 23
 INFO    2022-04-28 21:24:03,139 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:24:04,189 [main] GetCalls.GetUserWithProjectId  - The Response is : 
 INFO    2022-04-28 21:24:04,191 [main] GetCalls.GetUserWithProjectId  - The Status code is 200 : VERIFIED 
@@ -234,7 +234,7 @@ INFO    2022-04-28 21:24:18,234 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:24:19,271 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1000
 INFO    2022-04-28 21:24:19,271 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
 INFO    2022-04-28 21:24:19,274 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:24:20,357 [main] PostCalls.PostTestsAdithyaP  -
+INFO    2022-04-28 21:24:20,357 [main] PostCalls.PostCreateProjectT  -
 Expected: is <201>
      but: was <409>
 INFO    2022-04-28 21:24:20,884 [main] baseClass.BaseClass  - Signing as admin
@@ -249,7 +249,7 @@ INFO    2022-04-28 21:24:23,140 [main] PostCalls.postCalls_Keshav  - response ti
 INFO    2022-04-28 21:24:24,134 [main] PostCalls.postCalls_Keshav  - In signup :statuscode is as expected in response
 INFO    2022-04-28 21:24:24,139 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:24:26,295 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:24:27,357 [main] PutCalls.PutTestAdithyaP  -
+INFO    2022-04-28 21:24:27,357 [main] PutCalls.PutUpdateProject  -
 Expected: is <200>
      but: was <404>
 INFO    2022-04-28 21:24:27,359 [main] baseClass.BaseClass  - Signing as admin
@@ -259,7 +259,7 @@ INFO    2022-04-28 21:24:29,587 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:24:33,595 [main] baseClass.BaseClass  - Deleting Technology Dropdown
 INFO    2022-04-28 21:24:34,086 [main] baseClass.BaseClass  - Deleted a technology in dropdown
 INFO    2022-04-28 21:24:34,088 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:24:35,186 [main] DeleteCalls.DeleteTestsAdithyaP  - Vacancy 40 is not found since it is already deleted
+INFO    2022-04-28 21:24:35,186 [main] DeleteCalls.DeleteVacancy  - Vacancy 40 is not found since it is already deleted
 INFO    2022-04-28 21:24:35,189 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:24:35,758 [main] DeleteCalls.DeleteUser  - Deleting the user
 INFO    2022-04-28 21:24:36,801 [main] DeleteCalls.deleteCalls_keshav  - In testingAdminLoginApi :Status code is 200
@@ -303,8 +303,8 @@ INFO    2022-04-28 21:26:53,569 [main] baseClass.BaseClass  - Got vacancy Associ
 INFO    2022-04-28 21:26:54,612 [main] baseClass.BaseClass  - Got the user Associated with the project ID
 INFO    2022-04-28 21:26:55,199 [main] baseClass.BaseClass  - Got a user Assoiated with user id
 INFO    2022-04-28 21:26:55,201 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:26:57,049 [main] GetCalls.GetTestAdithyaP  - Data Types validated
-INFO    2022-04-28 21:26:58,657 [main] GetCalls.GetTestAdithyaP  - checking whether user 8 has applied for project 23
+INFO    2022-04-28 21:26:57,049 [main] GetCalls.GetVacancyT  - Data Types validated
+INFO    2022-04-28 21:26:58,657 [main] GetCalls.GetVacancyT  - checking whether user 8 has applied for project 23
 INFO    2022-04-28 21:26:58,658 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:27:00,120 [main] GetCalls.GetUserWithProjectId  - The Response is : 
 INFO    2022-04-28 21:27:00,121 [main] GetCalls.GetUserWithProjectId  - The Status code is 200 : VERIFIED 
@@ -338,7 +338,7 @@ INFO    2022-04-28 21:27:13,028 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:27:14,110 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1000
 INFO    2022-04-28 21:27:14,110 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
 INFO    2022-04-28 21:27:14,113 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:27:15,161 [main] PostCalls.PostTestsAdithyaP  -
+INFO    2022-04-28 21:27:15,161 [main] PostCalls.PostCreateProjectT  -
 Expected: is <201>
      but: was <409>
 INFO    2022-04-28 21:27:15,702 [main] baseClass.BaseClass  - Signing as admin
@@ -353,7 +353,7 @@ INFO    2022-04-28 21:27:18,082 [main] PostCalls.postCalls_Keshav  - response ti
 INFO    2022-04-28 21:27:19,024 [main] PostCalls.postCalls_Keshav  - In signup :statuscode is as expected in response
 INFO    2022-04-28 21:27:19,029 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:27:20,143 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:27:21,249 [main] PutCalls.PutTestAdithyaP  -
+INFO    2022-04-28 21:27:21,249 [main] PutCalls.PutUpdateProject  -
 Expected: is <200>
      but: was <404>
 INFO    2022-04-28 21:27:21,252 [main] baseClass.BaseClass  - Signing as admin
@@ -363,7 +363,7 @@ INFO    2022-04-28 21:27:23,408 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:27:23,979 [main] baseClass.BaseClass  - Deleting Technology Dropdown
 INFO    2022-04-28 21:27:24,458 [main] baseClass.BaseClass  - Deleted a technology in dropdown
 INFO    2022-04-28 21:27:24,461 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:27:25,512 [main] DeleteCalls.DeleteTestsAdithyaP  - Vacancy 40 is not found since it is already deleted
+INFO    2022-04-28 21:27:25,512 [main] DeleteCalls.DeleteVacancy  - Vacancy 40 is not found since it is already deleted
 INFO    2022-04-28 21:27:25,514 [main] baseClass.BaseClass  - Signing as admin
 INFO    2022-04-28 21:27:26,101 [main] DeleteCalls.DeleteUser  - Deleting the user
 INFO    2022-04-28 21:27:27,225 [main] DeleteCalls.deleteCalls_keshav  - In testingAdminLoginApi :Status code is 200
@@ -372,14 +372,412 @@ INFO    2022-04-28 21:27:27,242 [main] DeleteCalls.deleteCalls_keshav  - email i
 INFO    2022-04-28 21:27:28,216 [main] DeleteCalls.deleteCalls_keshav  - In deletingManager :vacancy by user is deleted successfully
 INFO    2022-04-28 21:27:28,217 [main] DeleteCalls.deleteCalls_keshav  - response time is less than 1000
 INFO    2022-04-28 21:34:05,323 [main] baseClass.BaseClass  - Signing as admin
-INFO    2022-04-28 21:34:08,051 [main] GetCalls.GetMethodsKeshav  - In getAllManagers :Status code is as expected in response that is 200
-INFO    2022-04-28 21:34:08,059 [main] GetCalls.GetMethodsKeshav  - succcessfully retrieved all the managers
-INFO    2022-04-28 21:34:08,061 [main] GetCalls.GetMethodsKeshav  - response time is less than 1500
-INFO    2022-04-28 21:34:09,118 [main] GetCalls.GetMethodsKeshav  - In getSpecificManager :Status code is as expected in response that is 200
-INFO    2022-04-28 21:34:09,119 [main] GetCalls.GetMethodsKeshav  - name is as expected in response
-INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetMethodsKeshav  - username is as expected in response
-INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetMethodsKeshav  - email is as expected in response
-INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetMethodsKeshav  - band is as expected in response
-INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetMethodsKeshav  - response time is less than 1500
-INFO    2022-04-28 21:34:10,395 [main] GetCalls.GetMethodsKeshav  - In getAllProjects :statuscode is as expected in response
-INFO    2022-04-28 21:34:10,396 [main] GetCalls.GetMethodsKeshav  - response time is less than 1500
+INFO    2022-04-28 21:34:08,051 [main] GetCalls.GetAllManagers  - In getAllManagers :Status code is as expected in response that is 200
+INFO    2022-04-28 21:34:08,059 [main] GetCalls.GetAllManagers  - succcessfully retrieved all the managers
+INFO    2022-04-28 21:34:08,061 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-28 21:34:09,118 [main] GetCalls.GetAllManagers  - In getSpecificManager :Status code is as expected in response that is 200
+INFO    2022-04-28 21:34:09,119 [main] GetCalls.GetAllManagers  - name is as expected in response
+INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetAllManagers  - username is as expected in response
+INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetAllManagers  - email is as expected in response
+INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetAllManagers  - band is as expected in response
+INFO    2022-04-28 21:34:09,120 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-28 21:34:10,395 [main] GetCalls.GetAllManagers  - In getAllProjects :statuscode is as expected in response
+INFO    2022-04-28 21:34:10,396 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 10:41:30,369 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:41:33,434 [main] DeleteCalls.DeleteManager  - In deletingManager :vacancy by user is deleted successfully
+INFO    2022-04-29 10:41:33,437 [main] DeleteCalls.DeleteManager  - response time is less than 1500
+INFO    2022-04-29 10:46:00,606 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:46:03,166 [main] GetCalls.GetAllManagers  - In getAllManagers :Status code is as expected in response that is 200
+INFO    2022-04-29 10:46:03,177 [main] GetCalls.GetAllManagers  - succcessfully retrieved all the managers
+INFO    2022-04-29 10:46:03,179 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 10:46:04,277 [main] GetCalls.GetAllManagers  - In getSpecificManager :Status code is as expected in response that is 200
+INFO    2022-04-29 10:46:04,277 [main] GetCalls.GetAllManagers  - name is as expected in response
+INFO    2022-04-29 10:46:04,278 [main] GetCalls.GetAllManagers  - username is as expected in response
+INFO    2022-04-29 10:46:04,278 [main] GetCalls.GetAllManagers  - email is as expected in response
+INFO    2022-04-29 10:46:04,278 [main] GetCalls.GetAllManagers  - band is as expected in response
+INFO    2022-04-29 10:46:04,278 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 10:46:05,480 [main] GetCalls.GetAllManagers  - In getAllProjects :statuscode is as expected in response
+INFO    2022-04-29 10:46:05,480 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 10:54:29,880 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:31,961 [main] DeleteCalls.DeleteBand  - Delete band from dropdown
+INFO    2022-04-29 10:54:32,506 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:34,491 [main] DeleteCalls.DeleteManager  - In deletingManager :vacancy by user is deleted successfully
+INFO    2022-04-29 10:54:34,492 [main] DeleteCalls.DeleteManager  - response time is less than 1500
+INFO    2022-04-29 10:54:34,495 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:35,630 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:36,229 [main] baseClass.BaseClass  - Deleting Technology Dropdown
+INFO    2022-04-29 10:54:36,720 [main] baseClass.BaseClass  - Deleted a technology in dropdown
+INFO    2022-04-29 10:54:36,725 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:37,850 [main] DeleteCalls.DeleteUser  - Deleting the user
+INFO    2022-04-29 10:54:38,359 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:39,447 [main] DeleteCalls.DeleteVacancy  - Vacancy 40 is not found since it is already deleted
+INFO    2022-04-29 10:54:39,450 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:40,669 [main] GetCalls.GetAllManagers  - In getAllManagers :Status code is as expected in response that is 200
+INFO    2022-04-29 10:54:40,688 [main] GetCalls.GetAllManagers  - succcessfully retrieved all the managers
+INFO    2022-04-29 10:54:40,688 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 10:54:41,732 [main] GetCalls.GetAllManagers  - In getSpecificManager :Status code is as expected in response that is 200
+INFO    2022-04-29 10:54:41,733 [main] GetCalls.GetAllManagers  - name is as expected in response
+INFO    2022-04-29 10:54:41,733 [main] GetCalls.GetAllManagers  - username is as expected in response
+INFO    2022-04-29 10:54:41,734 [main] GetCalls.GetAllManagers  - email is as expected in response
+INFO    2022-04-29 10:54:41,734 [main] GetCalls.GetAllManagers  - band is as expected in response
+INFO    2022-04-29 10:54:41,734 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 10:54:42,980 [main] GetCalls.GetAllManagers  - In getAllProjects :statuscode is as expected in response
+INFO    2022-04-29 10:54:42,981 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 10:54:42,983 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:43,568 [main] baseClass.BaseClass  - Getting all vacancy associated with project ID
+INFO    2022-04-29 10:54:44,091 [main] baseClass.BaseClass  - Got vacancy Associated with the project ID
+INFO    2022-04-29 10:54:44,747 [main] baseClass.BaseClass  - Got the user Associated with the project ID
+INFO    2022-04-29 10:54:45,297 [main] baseClass.BaseClass  - Got a user Assoiated with user id
+INFO    2022-04-29 10:54:45,300 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:45,898 [main] GetCalls.GetBandDropDown  - Getting  Dropdown
+INFO    2022-04-29 10:54:46,431 [main] GetCalls.GetBandDropDown  - Getting status code
+INFO    2022-04-29 10:54:46,434 [main] GetCalls.GetBandDropDown  - Getting response time
+INFO    2022-04-29 10:54:46,440 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:48,631 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 10:54:48,632 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 10:54:48,632 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 10:54:48,640 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:49,798 [main] baseClass.BaseClass  - Status Code :200
+INFO    2022-04-29 10:54:49,798 [main] baseClass.BaseClass  - Response time is less than 1500
+INFO    2022-04-29 10:54:49,801 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:50,960 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-29 10:54:50,961 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 10:54:50,961 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-29 10:54:50,964 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-29 10:54:50,965 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-29 10:54:50,966 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-29 10:54:50,968 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:52,133 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 10:54:52,136 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of specialization
+INFO    2022-04-29 10:54:52,137 [main] PostCalls.PostProfilePicUpdate  - php15 is present in the list of Specialization
+INFO    2022-04-29 10:54:52,137 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 10:54:52,140 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:53,232 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 10:54:53,234 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of technology
+INFO    2022-04-29 10:54:53,234 [main] PostCalls.PostProfilePicUpdate  - React JS is present in the list of Technology
+INFO    2022-04-29 10:54:53,234 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 10:54:53,236 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:54,342 [main] GetCalls.GetUserWithProjectId  - The Response is : 
+INFO    2022-04-29 10:54:54,344 [main] GetCalls.GetUserWithProjectId  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 10:54:54,344 [main] GetCalls.GetUserWithProjectId  - The Content Type is : JSON 
+INFO    2022-04-29 10:54:54,352 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:57,372 [main] GetCalls.GetVacancyT  - Data Types validated
+INFO    2022-04-29 10:54:57,839 [main] GetCalls.GetVacancyT  - checking whether user 8 has applied for project 23
+INFO    2022-04-29 10:54:57,841 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:54:58,470 [main] GetCalls.GetVacanyUsers  - Getting list of users in a particular Vacancy
+INFO    2022-04-29 10:54:59,088 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:00,170 [main] PostCalls.PostCreateProjectT  - Data Types validated
+INFO    2022-04-29 10:55:00,762 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:01,843 [main] PostCalls.PostCreateVacancy  - In createVacancy :status code  is as expected in response
+INFO    2022-04-29 10:55:01,844 [main] PostCalls.PostCreateVacancy  - band is as expected in response
+INFO    2022-04-29 10:55:01,844 [main] PostCalls.PostCreateVacancy  - skill is as expected in response
+INFO    2022-04-29 10:55:01,844 [main] PostCalls.PostCreateVacancy  - technology is as expected in response
+INFO    2022-04-29 10:55:01,845 [main] PostCalls.PostCreateVacancy  - response time is less than 1500
+INFO    2022-04-29 10:55:02,881 [main] PostCalls.PostCreateVacancy  - In signup :statuscode is as expected in response
+INFO    2022-04-29 10:55:02,886 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:03,492 [main] PostCalls.PostMapUser  - Mapping UserId
+INFO    2022-04-29 10:55:05,132 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:07,849 [main] PostCalls.PostProfilePicUpdate  - Uploading profile picture
+INFO    2022-04-29 10:55:07,851 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:09,145 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:10,214 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1000
+INFO    2022-04-29 10:55:10,215 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
+INFO    2022-04-29 10:55:10,217 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:11,333 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1000
+INFO    2022-04-29 10:55:11,334 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
+INFO    2022-04-29 10:55:11,336 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:55:12,407 [main] PutCalls.PutUpdateProject  - 
+Expected: is <200>
+     but: was <404>
+INFO    2022-04-29 10:55:12,408 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:57:09,611 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:57:11,488 [main] DeleteCalls.DeleteBand  - Delete band from dropdown
+INFO    2022-04-29 10:57:12,017 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:57:41,265 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:57:45,179 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 10:57:45,180 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 10:57:45,189 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 10:59:53,696 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 10:59:56,641 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 10:59:56,643 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 10:59:56,647 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 11:00:01,686 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:00:04,526 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 11:00:04,527 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:00:04,532 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 11:03:16,074 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:18,899 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 11:03:18,901 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:03:18,906 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 11:03:18,914 [main] baseClass.BaseClass  - Asserting whether email field is not null
+INFO    2022-04-29 11:03:18,926 [main] baseClass.BaseClass  - Asserting whether id field is not null
+INFO    2022-04-29 11:03:44,859 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:46,591 [main] DeleteCalls.DeleteBand  - Delete band from dropdown
+INFO    2022-04-29 11:03:47,205 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:49,033 [main] DeleteCalls.DeleteManager  - In deletingManager :vacancy by user is deleted successfully
+INFO    2022-04-29 11:03:49,034 [main] DeleteCalls.DeleteManager  - response time is less than 1500
+INFO    2022-04-29 11:03:49,037 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:50,152 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:50,731 [main] baseClass.BaseClass  - Deleting Technology Dropdown
+INFO    2022-04-29 11:03:51,207 [main] baseClass.BaseClass  - Deleted a technology in dropdown
+INFO    2022-04-29 11:03:51,212 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:51,914 [main] DeleteCalls.DeleteUser  - Deleting the user
+INFO    2022-04-29 11:03:52,408 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:53,544 [main] DeleteCalls.DeleteVacancy  - Vacancy 40 is not found since it is already deleted
+INFO    2022-04-29 11:03:53,547 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:54,686 [main] GetCalls.GetAllManagers  - In getAllManagers :Status code is as expected in response that is 200
+INFO    2022-04-29 11:03:54,707 [main] GetCalls.GetAllManagers  - succcessfully retrieved all the managers
+INFO    2022-04-29 11:03:54,707 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 11:03:55,708 [main] GetCalls.GetAllManagers  - In getSpecificManager :Status code is as expected in response that is 200
+INFO    2022-04-29 11:03:55,709 [main] GetCalls.GetAllManagers  - name is as expected in response
+INFO    2022-04-29 11:03:55,709 [main] GetCalls.GetAllManagers  - username is as expected in response
+INFO    2022-04-29 11:03:55,709 [main] GetCalls.GetAllManagers  - email is as expected in response
+INFO    2022-04-29 11:03:55,709 [main] GetCalls.GetAllManagers  - band is as expected in response
+INFO    2022-04-29 11:03:55,710 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 11:03:56,987 [main] GetCalls.GetAllManagers  - In getAllProjects :statuscode is as expected in response
+INFO    2022-04-29 11:03:56,987 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 11:03:56,990 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:57,575 [main] baseClass.BaseClass  - Getting all vacancy associated with project ID
+INFO    2022-04-29 11:03:58,151 [main] baseClass.BaseClass  - Got vacancy Associated with the project ID
+INFO    2022-04-29 11:03:58,714 [main] baseClass.BaseClass  - Got the user Associated with the project ID
+INFO    2022-04-29 11:03:59,287 [main] baseClass.BaseClass  - Got a user Assoiated with user id
+INFO    2022-04-29 11:03:59,289 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:03:59,878 [main] GetCalls.GetBandDropDown  - Getting  Dropdown
+INFO    2022-04-29 11:04:00,394 [main] GetCalls.GetBandDropDown  - Getting status code
+INFO    2022-04-29 11:04:00,398 [main] GetCalls.GetBandDropDown  - Getting response time
+INFO    2022-04-29 11:04:00,405 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:01,538 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 11:04:01,539 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:04:01,539 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 11:04:01,541 [main] baseClass.BaseClass  - Asserting whether email field is not null
+INFO    2022-04-29 11:04:01,545 [main] baseClass.BaseClass  - Asserting whether id field is not null
+INFO    2022-04-29 11:04:01,547 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:02,637 [main] baseClass.BaseClass  - Status Code :200
+INFO    2022-04-29 11:04:02,638 [main] baseClass.BaseClass  - Response time is less than 1500
+INFO    2022-04-29 11:04:02,643 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:03,776 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-29 11:04:03,778 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:04:03,778 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-29 11:04:03,779 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-29 11:04:03,781 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-29 11:04:03,782 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-29 11:04:03,785 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:04,850 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 11:04:04,852 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of specialization
+INFO    2022-04-29 11:04:04,852 [main] PostCalls.PostProfilePicUpdate  - php15 is present in the list of Specialization
+INFO    2022-04-29 11:04:04,852 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 11:04:04,854 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:05,974 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 11:04:05,976 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of technology
+INFO    2022-04-29 11:04:05,977 [main] PostCalls.PostProfilePicUpdate  - React JS is present in the list of Technology
+INFO    2022-04-29 11:04:05,977 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 11:04:05,980 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:07,154 [main] GetCalls.GetUserWithProjectId  - The Response is : 
+INFO    2022-04-29 11:04:07,154 [main] GetCalls.GetUserWithProjectId  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:04:07,154 [main] GetCalls.GetUserWithProjectId  - The Content Type is : JSON 
+INFO    2022-04-29 11:04:07,160 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:09,015 [main] GetCalls.GetVacancyT  - Data Types validated
+INFO    2022-04-29 11:04:09,543 [main] GetCalls.GetVacancyT  - checking whether user 8 has applied for project 23
+INFO    2022-04-29 11:04:09,546 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:10,146 [main] GetCalls.GetVacanyUsers  - Getting list of users in a particular Vacancy
+INFO    2022-04-29 11:04:10,661 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:11,799 [main] PostCalls.PostCreateProjectT  - Data Types validated
+INFO    2022-04-29 11:04:12,410 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:13,520 [main] PostCalls.PostCreateVacancy  - In createVacancy :status code  is as expected in response
+INFO    2022-04-29 11:04:13,521 [main] PostCalls.PostCreateVacancy  - band is as expected in response
+INFO    2022-04-29 11:04:13,522 [main] PostCalls.PostCreateVacancy  - skill is as expected in response
+INFO    2022-04-29 11:04:13,522 [main] PostCalls.PostCreateVacancy  - technology is as expected in response
+INFO    2022-04-29 11:04:13,522 [main] PostCalls.PostCreateVacancy  - response time is less than 1500
+INFO    2022-04-29 11:04:14,530 [main] PostCalls.PostCreateVacancy  - In signup :statuscode is as expected in response
+INFO    2022-04-29 11:04:14,535 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:15,133 [main] PostCalls.PostMapUser  - Mapping UserId
+INFO    2022-04-29 11:04:16,891 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:19,551 [main] PostCalls.PostProfilePicUpdate  - Uploading profile picture
+INFO    2022-04-29 11:04:19,555 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:21,024 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:22,094 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1000
+INFO    2022-04-29 11:04:22,095 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
+INFO    2022-04-29 11:04:22,097 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:23,227 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1000
+INFO    2022-04-29 11:04:23,228 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
+INFO    2022-04-29 11:04:23,231 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:04:24,454 [main] PutCalls.PutUpdateProject  - 
+Expected: is <200>
+     but: was <404>
+INFO    2022-04-29 11:04:24,457 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:14:44,705 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:14:47,601 [main] GetCalls.GetUserWithProjectId  - The Response is : 
+INFO    2022-04-29 11:14:47,603 [main] GetCalls.GetUserWithProjectId  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:14:47,609 [main] GetCalls.GetUserWithProjectId  - The Content Type is : JSON 
+INFO    2022-04-29 11:14:47,618 [main] GetCalls.GetUserWithProjectId  - Asserting whether email field is not null
+INFO    2022-04-29 11:14:47,630 [main] GetCalls.GetUserWithProjectId  - Asserting whether name field is not null
+INFO    2022-04-29 11:14:56,775 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:14:58,630 [main] DeleteCalls.DeleteBand  - Delete band from dropdown
+INFO    2022-04-29 11:14:59,210 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:00,896 [main] DeleteCalls.DeleteManager  - In deletingManager :vacancy by user is deleted successfully
+INFO    2022-04-29 11:15:00,897 [main] DeleteCalls.DeleteManager  - response time is less than 1500
+INFO    2022-04-29 11:15:00,899 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:02,017 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:02,658 [main] baseClass.BaseClass  - Deleting Technology Dropdown
+INFO    2022-04-29 11:15:03,243 [main] baseClass.BaseClass  - Deleted a technology in dropdown
+INFO    2022-04-29 11:15:03,249 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:03,829 [main] DeleteCalls.DeleteUser  - Deleting the user
+INFO    2022-04-29 11:15:04,367 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:05,475 [main] DeleteCalls.DeleteVacancy  - Vacancy 40 is not found since it is already deleted
+INFO    2022-04-29 11:15:05,478 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:06,637 [main] GetCalls.GetAllManagers  - In getAllManagers :Status code is as expected in response that is 200
+INFO    2022-04-29 11:15:06,667 [main] GetCalls.GetAllManagers  - succcessfully retrieved all the managers
+INFO    2022-04-29 11:15:06,668 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 11:15:07,681 [main] GetCalls.GetAllManagers  - In getSpecificManager :Status code is as expected in response that is 200
+INFO    2022-04-29 11:15:07,683 [main] GetCalls.GetAllManagers  - name is as expected in response
+INFO    2022-04-29 11:15:07,683 [main] GetCalls.GetAllManagers  - username is as expected in response
+INFO    2022-04-29 11:15:07,683 [main] GetCalls.GetAllManagers  - email is as expected in response
+INFO    2022-04-29 11:15:07,683 [main] GetCalls.GetAllManagers  - band is as expected in response
+INFO    2022-04-29 11:15:07,683 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 11:15:08,911 [main] GetCalls.GetAllManagers  - In getAllProjects :statuscode is as expected in response
+INFO    2022-04-29 11:15:08,911 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 11:15:08,913 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:09,469 [main] baseClass.BaseClass  - Getting all vacancy associated with project ID
+INFO    2022-04-29 11:15:10,006 [main] baseClass.BaseClass  - Got vacancy Associated with the project ID
+INFO    2022-04-29 11:15:10,549 [main] baseClass.BaseClass  - Got the user Associated with the project ID
+INFO    2022-04-29 11:15:11,100 [main] baseClass.BaseClass  - Got a user Assoiated with user id
+INFO    2022-04-29 11:15:11,102 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:11,669 [main] GetCalls.GetBandDropDown  - Getting  Dropdown
+INFO    2022-04-29 11:15:12,159 [main] GetCalls.GetBandDropDown  - Getting status code
+INFO    2022-04-29 11:15:12,160 [main] GetCalls.GetBandDropDown  - Getting response time
+INFO    2022-04-29 11:15:12,164 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:13,389 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 11:15:13,390 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:15:13,390 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 11:15:13,392 [main] baseClass.BaseClass  - Asserting whether email field is not null
+INFO    2022-04-29 11:15:13,397 [main] baseClass.BaseClass  - Asserting whether id field is not null
+INFO    2022-04-29 11:15:13,399 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:14,541 [main] baseClass.BaseClass  - Status Code :200
+INFO    2022-04-29 11:15:14,541 [main] baseClass.BaseClass  - Response time is less than 1500
+INFO    2022-04-29 11:15:14,544 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:15,673 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-29 11:15:15,675 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:15:15,675 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-29 11:15:15,676 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-29 11:15:15,678 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-29 11:15:15,679 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-29 11:15:15,681 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:16,748 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 11:15:16,751 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of specialization
+INFO    2022-04-29 11:15:16,752 [main] PostCalls.PostProfilePicUpdate  - php15 is present in the list of Specialization
+INFO    2022-04-29 11:15:16,752 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 11:15:16,754 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:17,891 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 11:15:17,892 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of technology
+INFO    2022-04-29 11:15:17,893 [main] PostCalls.PostProfilePicUpdate  - React JS is present in the list of Technology
+INFO    2022-04-29 11:15:17,894 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 11:15:17,896 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:19,004 [main] GetCalls.GetUserWithProjectId  - The Response is : 
+INFO    2022-04-29 11:15:19,006 [main] GetCalls.GetUserWithProjectId  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 11:15:19,006 [main] GetCalls.GetUserWithProjectId  - The Content Type is : JSON 
+INFO    2022-04-29 11:15:19,008 [main] GetCalls.GetUserWithProjectId  - Asserting whether email field is not null
+INFO    2022-04-29 11:15:19,010 [main] GetCalls.GetUserWithProjectId  - Asserting whether name field is not null
+INFO    2022-04-29 11:15:19,012 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:20,865 [main] GetCalls.GetVacancyT  - Data Types validated
+INFO    2022-04-29 11:15:21,395 [main] GetCalls.GetVacancyT  - checking whether user 8 has applied for project 23
+INFO    2022-04-29 11:15:21,397 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:22,013 [main] GetCalls.GetVacanyUsers  - Getting list of users in a particular Vacancy
+INFO    2022-04-29 11:15:22,599 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:23,764 [main] PostCalls.PostCreateProjectT  - 
+Expected: is <201>
+     but: was <409>
+INFO    2022-04-29 11:15:24,334 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:25,457 [main] PostCalls.PostCreateVacancy  - In createVacancy :status code  is as expected in response
+INFO    2022-04-29 11:15:25,457 [main] PostCalls.PostCreateVacancy  - band is as expected in response
+INFO    2022-04-29 11:15:25,457 [main] PostCalls.PostCreateVacancy  - skill is as expected in response
+INFO    2022-04-29 11:15:25,458 [main] PostCalls.PostCreateVacancy  - technology is as expected in response
+INFO    2022-04-29 11:15:25,458 [main] PostCalls.PostCreateVacancy  - response time is less than 1500
+INFO    2022-04-29 11:15:26,480 [main] PostCalls.PostCreateVacancy  - In signup :statuscode is as expected in response
+INFO    2022-04-29 11:15:26,485 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:27,109 [main] PostCalls.PostMapUser  - Mapping UserId
+INFO    2022-04-29 11:15:28,730 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:31,188 [main] PostCalls.PostProfilePicUpdate  - Uploading profile picture
+INFO    2022-04-29 11:15:31,191 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:32,336 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:35,699 [main] PostCalls.PostProfilePicUpdate  - Response time is greater than 1000
+INFO    2022-04-29 11:15:35,699 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
+INFO    2022-04-29 11:15:35,701 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:36,712 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1000
+INFO    2022-04-29 11:15:36,713 [main] PostCalls.PostProfilePicUpdate  - Data types Validated
+INFO    2022-04-29 11:15:36,714 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 11:15:37,824 [main] PutCalls.PutUpdateProject  - 
+Expected: is <200>
+     but: was <404>
+INFO    2022-04-29 11:15:37,825 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:07,391 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:08,806 [main] DeleteCalls.DeleteBand  - Delete band from dropdown
+INFO    2022-04-29 12:45:09,369 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:11,086 [main] DeleteCalls.DeleteManager  - In deletingManager :vacancy by user is deleted successfully
+INFO    2022-04-29 12:45:11,087 [main] DeleteCalls.DeleteManager  - response time is less than 1500
+INFO    2022-04-29 12:45:11,089 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:12,121 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:12,733 [main] baseClass.BaseClass  - Deleting Technology Dropdown
+INFO    2022-04-29 12:45:13,218 [main] baseClass.BaseClass  - Deleted a technology in dropdown
+INFO    2022-04-29 12:45:13,221 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:13,853 [main] DeleteCalls.DeleteUser  - Deleting the user
+INFO    2022-04-29 12:45:14,339 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:15,384 [main] DeleteCalls.DeleteVacancy  - Vacancy 40 is not found since it is already deleted
+INFO    2022-04-29 12:45:15,386 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:16,572 [main] GetCalls.GetAllManagers  - In getAllManagers :Status code is as expected in response that is 200
+INFO    2022-04-29 12:45:16,583 [main] GetCalls.GetAllManagers  - succcessfully retrieved all the managers
+INFO    2022-04-29 12:45:16,583 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 12:45:17,459 [main] GetCalls.GetAllManagers  - In getSpecificManager :Status code is as expected in response that is 200
+INFO    2022-04-29 12:45:17,460 [main] GetCalls.GetAllManagers  - name is as expected in response
+INFO    2022-04-29 12:45:17,460 [main] GetCalls.GetAllManagers  - username is as expected in response
+INFO    2022-04-29 12:45:17,460 [main] GetCalls.GetAllManagers  - email is as expected in response
+INFO    2022-04-29 12:45:17,460 [main] GetCalls.GetAllManagers  - band is as expected in response
+INFO    2022-04-29 12:45:17,460 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 12:45:18,715 [main] GetCalls.GetAllManagers  - In getAllProjects :statuscode is as expected in response
+INFO    2022-04-29 12:45:18,715 [main] GetCalls.GetAllManagers  - response time is less than 1500
+INFO    2022-04-29 12:45:18,716 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:19,315 [main] baseClass.BaseClass  - Getting all vacancy associated with project ID
+INFO    2022-04-29 12:45:19,854 [main] baseClass.BaseClass  - Got vacancy Associated with the project ID
+INFO    2022-04-29 12:45:20,470 [main] baseClass.BaseClass  - Got the user Associated with the project ID
+INFO    2022-04-29 12:45:21,123 [main] baseClass.BaseClass  - Got a user Assoiated with user id
+INFO    2022-04-29 12:45:21,125 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:21,739 [main] GetCalls.GetBandDropDown  - Getting  Dropdown
+INFO    2022-04-29 12:45:23,455 [main] GetCalls.GetBandDropDown  - Getting status code
+INFO    2022-04-29 12:45:23,457 [main] GetCalls.GetBandDropDown  - Getting response time
+INFO    2022-04-29 12:45:23,462 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:24,604 [main] baseClass.BaseClass  - The Response is : 
+INFO    2022-04-29 12:45:24,605 [main] baseClass.BaseClass  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 12:45:24,605 [main] baseClass.BaseClass  - The Content Type is : JSON 
+INFO    2022-04-29 12:45:24,606 [main] baseClass.BaseClass  - Asserting whether email field is not null
+INFO    2022-04-29 12:45:24,609 [main] baseClass.BaseClass  - Asserting whether id field is not null
+INFO    2022-04-29 12:45:24,610 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:25,755 [main] baseClass.BaseClass  - Status Code :200
+INFO    2022-04-29 12:45:25,755 [main] baseClass.BaseClass  - Response time is less than 1500
+INFO    2022-04-29 12:45:25,756 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:26,863 [main] GetCalls.GetProject  - The Response is : 
+INFO    2022-04-29 12:45:26,863 [main] GetCalls.GetProject  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 12:45:26,864 [main] GetCalls.GetProject  - The Content Type is : JSON 
+INFO    2022-04-29 12:45:26,865 [main] GetCalls.GetProject  - Checking Product ID of the response :
+INFO    2022-04-29 12:45:26,865 [main] GetCalls.GetProject  - Checking the name of the project
+INFO    2022-04-29 12:45:26,866 [main] GetCalls.GetProject  - Checking the status of the project
+INFO    2022-04-29 12:45:26,867 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:27,917 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 12:45:27,920 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of specialization
+INFO    2022-04-29 12:45:27,921 [main] PostCalls.PostProfilePicUpdate  - php15 is present in the list of Specialization
+INFO    2022-04-29 12:45:27,921 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 12:45:27,922 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:28,973 [main] PostCalls.PostProfilePicUpdate  - Status Code :200
+INFO    2022-04-29 12:45:28,976 [main] PostCalls.PostProfilePicUpdate  - id is present in the list of technology
+INFO    2022-04-29 12:45:28,977 [main] PostCalls.PostProfilePicUpdate  - React JS is present in the list of Technology
+INFO    2022-04-29 12:45:28,977 [main] PostCalls.PostProfilePicUpdate  - Response time is less than 1500
+INFO    2022-04-29 12:45:28,978 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:30,230 [main] GetCalls.GetUserWithProjectId  - The Response is : 
+INFO    2022-04-29 12:45:30,231 [main] GetCalls.GetUserWithProjectId  - The Status code is 200 : VERIFIED 
+INFO    2022-04-29 12:45:30,231 [main] GetCalls.GetUserWithProjectId  - The Content Type is : JSON 
+INFO    2022-04-29 12:45:30,232 [main] GetCalls.GetUserWithProjectId  - Asserting whether email field is not null
+INFO    2022-04-29 12:45:30,232 [main] GetCalls.GetUserWithProjectId  - Asserting whether name field is not null
+INFO    2022-04-29 12:45:30,233 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:33,190 [main] GetCalls.GetVacancyT  - Data Types validated
+INFO    2022-04-29 12:45:33,681 [main] GetCalls.GetVacancyT  - checking whether user 8 has applied for project 23
+INFO    2022-04-29 12:45:33,682 [main] baseClass.BaseClass  - Signing as admin
+INFO    2022-04-29 12:45:34,271 [main] GetCalls.GetVacanyUsers  - Getting list of users in a particular Vacancy
+INFO    2022-04-29 12:45:34,862 [main] baseClass.BaseClass  - Signing as admin

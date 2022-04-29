@@ -1,17 +1,10 @@
 package DeleteCalls;
 
-import GetCalls.GetProject;
 import baseClass.BaseClass;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 import static io.restassured.RestAssured.given;
 

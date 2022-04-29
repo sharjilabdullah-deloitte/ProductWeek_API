@@ -11,7 +11,7 @@ import java.nio.file.Path;
 
 import static io.restassured.RestAssured.given;
 
-public class DeleteTest extends BaseClass {
+public class DeleteTechnology extends BaseClass {
     static String technologyName;
     @Test(priority = 7)
     public void deleteTechonolgyDropdown() throws IOException {

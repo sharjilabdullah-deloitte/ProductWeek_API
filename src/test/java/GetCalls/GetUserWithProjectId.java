@@ -1,7 +1,6 @@
 package GetCalls;
 
 import baseClass.BaseClass;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;
@@ -10,13 +9,10 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
 
 public class GetUserWithProjectId extends BaseClass {
 
@@ -30,7 +26,7 @@ public class GetUserWithProjectId extends BaseClass {
         response = given().headers("Authorization", "Bearer " + token, "Content-Type",
                         ContentType.JSON).
                 baseUri(url)
-                .when().get("projects-users/149").then().extract().response();
+                .when().get("projects-users/178").then().extract().response();
         int statusCode = response.statusCode();
         String contentType = response.getContentType();
 

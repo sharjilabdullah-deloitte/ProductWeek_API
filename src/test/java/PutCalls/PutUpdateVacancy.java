@@ -28,7 +28,7 @@ public class PutUpdateVacancy extends BaseClass {
                 = Path.of("src/main/java/utils/jsonBody/updatevacancy.json");
         updatevacancyString = Files.readString(updatevacancyPath);
         Response response = given().
-                baseUri("https://hashedin-backend-test-urtjok3rza-wl.a.run.app/").
+                baseUri(url).
                 header("Content-Type","application/json").
                 header("Authorization","Bearer "+ token).
                 body(updatevacancyString).

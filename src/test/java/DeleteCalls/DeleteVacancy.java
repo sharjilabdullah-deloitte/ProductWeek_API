@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class DeleteTestsAdithyaP extends BaseClass {
-    public static Logger logger = Logger.getLogger(DeleteTestsAdithyaP.class);
+public class DeleteVacancy extends BaseClass {
+    public static Logger logger = Logger.getLogger(DeleteVacancy.class);
 
     @Test
     public void deleteAlreadyDeletedVacancy(){

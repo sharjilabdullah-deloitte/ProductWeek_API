@@ -13,11 +13,11 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class GetMethodsKeshav extends BaseClass {
-    String baseUrl = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
-    String tokenByAdmin;
+public class GetAllManagers extends BaseClass {
+//    String baseUrl = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
+//    String tokenByAdmin;
     int responseTime;
-    public static Logger logger = Logger.getLogger(GetMethodsKeshav.class);
+    public static Logger logger = Logger.getLogger(GetAllManagers.class);
     @BeforeTest
     public void handshake() {
         RestAssured.useRelaxedHTTPSValidation();
@@ -40,7 +40,7 @@ public class GetMethodsKeshav extends BaseClass {
     public void getAllManagers() {
         Response response2 =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Content-type", "application/json")
                         .when()
@@ -62,7 +62,7 @@ public class GetMethodsKeshav extends BaseClass {
     public void getSpecificManager() {
         Response response3 =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Content-type", "application/json")
                         .when().get("managers/41")
@@ -92,7 +92,7 @@ public class GetMethodsKeshav extends BaseClass {
     public void getAllProjects() {
         Response response4 =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Content-type", "application/json")
                         .when().get("projects")

@@ -5,8 +5,6 @@ import io.restassured.response.Response;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -25,7 +25,6 @@ public class PostSignInAsUser extends BaseClass {
 
     @Test(priority = 1)
     public static void setupUserLogin() throws IOException {
-        RestAssured.baseURI = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
         Path fileNameForUserLogin
                 = Path.of("src/main/java/utils/jsonBody/UserLogin.json");
         postUserJsonData = Files.readString(fileNameForUserLogin);

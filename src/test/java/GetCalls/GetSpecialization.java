@@ -10,29 +10,29 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetTechnologyAbinesh extends BaseClass {
+public class GetSpecialization extends BaseClass {
     public static Logger logger = Logger.getLogger(PostProfilePicUpdate.class);
-    String techName = "React JS";
-    @Test(priority = 1)
-    public void getTechnology() {
+    String specializationName = "php15";
+    @Test(priority = 3)
+    public void getSpecialization() {
         Response response = given().
                 baseUri(url).
                 header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token).
                 when().
-                get("drop-down/technology").
+                get("drop-down/specialization").
                 then().extract().response();
         int statuscode = response.getStatusCode();
         logger.info("Status Code :" + statuscode);
         Assert.assertEquals(statuscode, 200, "Correct status code returned");
         JSONArray array = new JSONArray(response.asString());
         for (int i = 0; i < array.length(); i++) {
-            int id = (int) array.getJSONObject(i).get("technologyId");
-            if (id == 9) {
-                logger.info("id is present in the list of technology");
-                String technologyName = (String) array.getJSONObject(i).get("technology");
-                if (technologyName.equals(techName)) {
-                    logger.info(techName + " is present in the list of Technology");
+            int id = (int) array.getJSONObject(i).get("specializationId");
+            if (id == 76) {
+                logger.info("id is present in the list of specialization");
+                String technologyName = (String) array.getJSONObject(i).get("specialization");
+                if (technologyName.equals(specializationName)) {
+                    logger.info(specializationName + " is present in the list of Specialization");
                 }
             }
         }

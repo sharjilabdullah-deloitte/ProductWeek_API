@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static io.restassured.RestAssured.given;
 
-public class PostTechnologyAbinesh extends BaseClass {
+public class PostTechnology extends BaseClass {
     public static Logger logger = Logger.getLogger(PostProfilePicUpdate.class);
     @Test(priority = 6)
     public void postTechnology(){

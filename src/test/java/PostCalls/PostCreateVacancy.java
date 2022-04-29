@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -17,10 +18,9 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class PostMethodKeshav extends BaseClass {
-    String baseUrl = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
+public class PostCreateVacancy extends BaseClass {
     int responseTime;
-    public static Logger logger = Logger.getLogger(PostMethodKeshav.class);
+    public static Logger logger = Logger.getLogger(PostCreateVacancy.class);
     @BeforeTest
     public void handshake() {
         RestAssured.useRelaxedHTTPSValidation();
@@ -44,7 +44,7 @@ public class PostMethodKeshav extends BaseClass {
         String postVacancyJsonData = Files.readString(fileNameForAdminLogin);
         Response response =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Content-type", "application/json")
                         .body(postVacancyJsonData)
@@ -73,7 +73,7 @@ public class PostMethodKeshav extends BaseClass {
         String newBandJsonData = Files.readString(fileNameForAdminLogin);
         Response response =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Content-type", "application/json")
                         .body(newBandJsonData)
@@ -96,7 +96,7 @@ public class PostMethodKeshav extends BaseClass {
         String signupJsonData = Files.readString(fileNameForAdminLogin);
         Response response =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Content-type", "application/json")
                         .body(signupJsonData.toString())

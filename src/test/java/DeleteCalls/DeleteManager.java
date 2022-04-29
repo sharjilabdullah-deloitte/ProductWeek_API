@@ -9,15 +9,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class DeleteMethodsKeshav extends BaseClass {
-    String baseUrl = "https://hashedin-backend-test-urtjok3rza-wl.a.run.app/";
-    String tokenByAdmin;
+public class DeleteManager extends BaseClass {
+
     int responseTime;
-    String tokenByManager;
-    public static Logger logger = Logger.getLogger(DeleteMethodsKeshav.class);
+
+    public static Logger logger = Logger.getLogger(DeleteManager.class);
     @BeforeTest
     public void handshake() {
         RestAssured.useRelaxedHTTPSValidation();
@@ -39,7 +37,7 @@ public class DeleteMethodsKeshav extends BaseClass {
     public void deletingManager() {
         Response response =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Context-type", "application/json")
                         .when().delete("managers/462")
@@ -59,7 +57,7 @@ public class DeleteMethodsKeshav extends BaseClass {
     public void deletingVacancyByUser() {
         Response response =
                 given()
-                        .baseUri(baseUrl)
+                        .baseUri(url)
                         .header("Authorization", "Bearer " + token)
                         .header("Context-type", "application/json")
                         .when().delete("users/457/vacancies-delete/625")
